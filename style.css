@@ -1,0 +1,216 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Game board styles */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5vw, 1fr));
+  gap: 2px;
+  margin-top: 20px;
+  background-color: #5E8C31;
+  /* Green background like grass */
+}
+
+/* Responsive font size for game stats */
+.score,
+.level {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+
+  .score,
+  .level {
+    font-size: 2vw;
+    margin: 5px;
+  }
+
+  .menu-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+/* Default styles for body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #5E8C31;
+  /* Green background like grass */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Game container styles */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Game board styles */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  gap: 2px;
+  margin-top: 20px;
+}
+
+/* Individual cell styles */
+.cell {
+  width: 20px;
+  /* Double the width */
+  height: 20px;
+  /* Double the height */
+  background-color: #c7b9ff;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Bunny image styles */
+.bunny {
+  background-image: url('bunny.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+/* Food image styles */
+.food {
+  background-image: url('carrot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Game stats section styles */
+.game-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #2E4419;
+  /* Dark green background for stats */
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Score and level display styles */
+.score,
+.level {
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.score,
+.level,
+.menu-button {
+  width: 50%;
+  padding: 5px;
+}
+
+/* Bold style for the level display */
+.level {
+  font-weight: bold;
+}
+
+/* Restart button styles */
+.menu-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for the level menu (including "Select Level" and level buttons) */
+.level-menu {
+  display: none;
+  background-color: #E5D995;
+  /* Light yellow background for menu */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Styles for the "Select Level" heading */
+.level-menu h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+/* Styles for the container of level buttons */
+.level-buttons {
+  display: flex;
+  /* Display level buttons in a row */
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  /* Allow wrapping for responsiveness */
+}
+
+/* Styles for individual level buttons */
+.level-button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #87cefa;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Margin at the top of level buttons */
+.level-buttons {
+  margin-top: 10px;
+}
+
+/* Margin for individual level buttons */
+.level-button {
+  margin: 0 5px;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
