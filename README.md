@@ -1,9 +1,5 @@
 # BunnyGame
 
-
-```markdown
-# Bunny Game
-
 Bunny Game is a classic snake game where you control a cute bunny to collect carrots while avoiding collisions with walls and yourself. The game has multiple levels, each with a different speed and challenge.
 
 
